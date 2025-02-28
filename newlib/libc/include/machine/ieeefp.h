@@ -607,6 +607,10 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #endif
 #endif
 
+#ifdef __wasm__
+#define __IEEE_LITTLE_ENDIAN
+#endif
+
 /* New math code requires 64-bit doubles */
 #ifdef _DOUBLE_IS_32BITS
 #undef __OBSOLETE_MATH
