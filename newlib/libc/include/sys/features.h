@@ -491,6 +491,12 @@ extern "C" {
 # define _POSIX_VERSION 199009L
 #endif
 
+/* WARP */
+#ifdef __WARP__
+#define _POSIX_TIMERS 1
+#define _POSIX_MONOTONIC_CLOCK		200112L
+#endif
+
 #ifdef __cplusplus
 }
 #endif
